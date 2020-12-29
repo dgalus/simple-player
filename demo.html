@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title>Test for player</title>
+    </head>
+    <body>
+        <div style="width: 800px; height: 600px">
+            <div id="video-player"></div>
+        </div>
+
+        <script src="player.js"></script>
+        <script>
+            var playlist = [
+                new PlaylistItem('https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164', 'some video'),
+                new PlaylistItem('https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164', 'some video 2'),
+            ];
+            new VideoPlayer('video-player', playlist).show();
+        </script>
+    </body>
+</html>
